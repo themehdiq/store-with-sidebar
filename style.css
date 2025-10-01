@@ -138,9 +138,27 @@ body {
 
 .container .main-content .products .product {
     display: flex;
+    align-items: center;
 }
 
-.container .main-content .products .product img {
+.container .main-content .products .product .prod-img {
+    position: relative;
+}
+
+.container .main-content .products .product .prod-img::before {
+    content: "-12%";
+    position: absolute;
+    top: -45px;
+    right: 45px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 10px 6px;
+}
+
+.container .main-content .products .product .prod-img img {
     width: 250px;
     margin-right: 30px;
 }
