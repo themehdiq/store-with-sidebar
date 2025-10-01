@@ -38,3 +38,163 @@ body {
 }
 
 /* END GLOBAL RULES */
+.container .path {
+    margin-bottom: 40px;
+}
+
+.container .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .main-content {
+    flex-basis: calc(75%);
+}
+
+.container .main-content>img {
+    width: 100%;
+    height: 200px;
+
+}
+
+@media (max-width: 771px) {
+    .container .main-content>img {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+.container .main-content .filters-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: #f0f0f0;
+    padding: 10px 7px;
+    font-size: 14px;
+}
+
+.container .main-content .filters-bar .display-manner {
+    display: flex;
+    align-items: center;
+}
+
+.container .main-content .filters-bar .display-manner .display-1 {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 50%;
+    margin-right: 8px;
+    display: grid;
+    grid-template-columns: 4px 4px 4px;
+    grid-template-rows: 4px 4px 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container .main-content .filters-bar .display-manner .display-1 span {
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+}
+
+.container .main-content .filters-bar .display-manner .display-2 {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 30px;
+    padding: 9px;
+    cursor: pointer;
+}
+
+.container .main-content .filters-bar .display-manner .display-2 span {
+    display: block;
+    width: 12px;
+    height: 1.4px;
+    background-color: white;
+    margin-bottom: 3px;
+
+}
+
+.container .main-content .filters-bar .show-and-sort {}
+
+.container .main-content .filters-bar .show-and-sort>span:last-of-type {
+    margin-left: 24px;
+}
+
+.container .main-content .filters-bar .show-and-sort select {
+    border: none;
+    outline: none;
+    margin-left: 8px;
+    font-size: 11px;
+    padding: 5px;
+}
+
+.container .main-content .products {}
+
+.container .main-content .products .product {
+    display: flex;
+}
+
+.container .main-content .products .product img {
+    width: 250px;
+    margin-right: 30px;
+}
+
+.container .main-content .products .product .product-infos {}
+
+.container .main-content .products .product .product-infos .rating-stars {}
+
+.container .main-content .products .product .product-infos .rating-stars i {
+    font-size: 12px;
+    color: #FFC107;
+    margin-bottom: 10px;
+}
+
+.container .main-content .products .product .product-infos h3 {
+    margin-bottom: 10px;
+}
+
+.container .main-content .products .product .product-infos h5 {
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.container .main-content .products .product .product-infos .pricing {
+    margin-bottom: 10px;
+}
+
+.container .main-content .products .product .product-infos .pricing span:first-child {
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+.container .main-content .products .product .product-infos .pricing span:last-child {
+    font-weight: bold;
+    color: red;
+
+}
+
+.container .main-content .products .product .product-infos p {
+    margin-bottom: 13px;
+}
+
+.container .main-content .products .product .product-infos .user-to-prd-actions {}
+
+.container .main-content .products .product .product-infos .user-to-prd-actions i {
+    padding: 9px;
+    box-shadow: 1px 1px 3px -1px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.container .sidebar {
+    border: 1px solid gray;
+    flex-basis: calc(25% - 20px);
+}
