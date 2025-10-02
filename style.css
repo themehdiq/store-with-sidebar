@@ -213,6 +213,104 @@ body {
 }
 
 .container .sidebar {
-    border: 1px solid gray;
+
     flex-basis: calc(25% - 20px);
+}
+
+.container .sidebar .sidebar-part {
+    border: 3px solid #efeeee;
+    padding: 20px 16px;
+    margin-bottom: 20px;
+}
+
+.container .sidebar .sidebar-part h5 {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.container .sidebar .sidebar-part h5::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: .5px;
+    background-color: red;
+    left: 0;
+    bottom: 0;
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+}
+
+.container .sidebar .sidebar-part h5 {
+    text-transform: uppercase;
+}
+
+.container .sidebar .sidebar-part .categories,
+.container .sidebar .sidebar-part .colors {
+    margin-top: 40px;
+}
+
+.container .sidebar .sidebar-part .categories .category,
+.container .sidebar .sidebar-part .colors .color {
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+
+.container .sidebar .sidebar-part .categories .category .category-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.list-arrow {
+    font-size: 8px;
+    transform: rotate(270deg) scaleY(2);
+    -webkit-transform: rotate(270deg) scaleY(2);
+    -moz-transform: rotate(270deg) scaleY(2);
+    -ms-transform: rotate(270deg) scaleY(2);
+    -o-transform: rotate(270deg) scaleY(2);
+}
+
+.rotate-arrow {
+    transform: rotate(90deg) scaleY(2);
+    -webkit-transform: rotate(90deg) scaleY(2);
+    -moz-transform: rotate(90deg) scaleY(2);
+    -ms-transform: rotate(90deg) scaleY(2);
+    -o-transform: rotate(90deg) scaleY(2);
+}
+
+
+.container .sidebar .sidebar-part .categories .category .menu {
+    margin: 5px 0 0 15px;
+
+}
+
+.menu {
+    display: none;
+}
+
+.show-list {
+    display: block;
+}
+
+
+
+.container .sidebar .sidebar-part .categories .category .menu a {
+    display: block;
+    text-decoration: none;
+    color: #5b5b5b;
+    margin-bottom: 5px;
+}
+
+.container .sidebar .sidebar-part .colors .color span:first-child {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-bottom: -1px;
+    margin-right: 2px;
+    box-shadow: 1px 0px 4px -1px;
 }
