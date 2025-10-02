@@ -13,17 +13,13 @@ body {
 
 
 .container {
+    width: 96%;
     padding-top: 50px;
     padding-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
 }
 
-@media (min-width: 768px) {
-    .container {
-        width: 700px;
-    }
-}
 
 @media (min-width: 992px) {
     .container {
@@ -48,7 +44,13 @@ body {
 }
 
 .container .main-content {
-    flex-basis: calc(75%);
+    flex-basis: 75%;
+}
+
+@media (max-width: 767px) {
+    .container .main-content {
+        flex-basis: 70%;
+    }
 }
 
 .container .main-content>img {
@@ -80,6 +82,18 @@ body {
     display: flex;
     align-items: center;
 }
+
+@media (max-width: 998px) {
+    .container .main-content .filters-bar {
+        flex-direction: column;
+    }
+
+    .container .main-content .filters-bar .display-manner {
+        margin-bottom: 10px;
+    }
+}
+
+
 
 .container .main-content .filters-bar .display-manner .display-1 {
     width: 30px;
@@ -120,8 +134,6 @@ body {
 
 }
 
-.container .main-content .filters-bar .show-and-sort {}
-
 .container .main-content .filters-bar .show-and-sort>span:last-of-type {
     margin-left: 24px;
 }
@@ -134,11 +146,18 @@ body {
     padding: 5px;
 }
 
-.container .main-content .products {}
+
 
 .container .main-content .products .product {
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 767px) {
+    .container .main-content .products .product {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .container .main-content .products .product .prod-img {
@@ -163,9 +182,13 @@ body {
     margin-right: 30px;
 }
 
-.container .main-content .products .product .product-infos {}
+@media (max-width: 767px) {
+    .container .main-content .products .product .prod-img img {
+        width: 180px;
+        margin-right: 30px;
+    }
+}
 
-.container .main-content .products .product .product-infos .rating-stars {}
 
 .container .main-content .products .product .product-infos .rating-stars i {
     font-size: 12px;
@@ -203,7 +226,6 @@ body {
     margin-bottom: 13px;
 }
 
-.container .main-content .products .product .product-infos .user-to-prd-actions {}
 
 .container .main-content .products .product .product-infos .user-to-prd-actions i {
     padding: 9px;
@@ -213,8 +235,13 @@ body {
 }
 
 .container .sidebar {
-
     flex-basis: calc(25% - 20px);
+}
+
+@media (max-width: 767px) {
+    .container .sidebar {
+        flex-basis: calc(30% - 20px);
+    }
 }
 
 .container .sidebar .sidebar-part {
